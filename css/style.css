@@ -1,0 +1,55 @@
+/* GENERAL STYLES */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+img{
+    max-width:100%;
+   
+}
+/* UTILITIES */
+.viewport{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex-grow: 1;
+    display: flex;
+    align-content: center;
+}
+.player{
+    min-height: 100px;
+}
+.main-content{
+    flex-grow: 1;
+}
+.sidebar{
+    /* flex-basis: 0; ??? */
+    width: 200px;
+}
+/* DEBUG */
+
+.debug .container{
+    border: 2px solid blue;
+}
+
+.debug .player{
+    border: 2px solid green;
+}
+
+.debug .sidebar{
+    border: 2px solid yellow;
+}
+.debug .main-content{
+    border: 2px solid yellow;
+}
