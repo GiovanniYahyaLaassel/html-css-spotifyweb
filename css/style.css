@@ -25,9 +25,11 @@ img{
 .container{
     flex-grow: 1;
     display: flex;
-    align-content: center;
 }
-.player{
+.player-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 100px;
 }
 .main-content{
@@ -35,7 +37,7 @@ img{
 }
 .sidebar{
     /* flex-basis: 0; ??? */
-    width: 200px;
+    width: 250px;
 }
 /* DEBUG */
 
@@ -52,4 +54,8 @@ img{
 }
 .debug .main-content{
     border: 2px solid yellow;
+}
+
+.debug .song-details, .playback-controls, .volume-controls{
+    border:2px solid black;
 }
