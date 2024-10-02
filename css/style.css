@@ -13,6 +13,13 @@
     margin: 0;
     padding:0;
 }
+body{
+    background-color: var(--deep-blue);
+    color: white;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
 ul,ol{
     list-style: none;
 }
@@ -24,6 +31,7 @@ img{
     max-width:100%;
    
 }
+
 /* UTILITIES */
 .viewport{
     height: 100vh;
@@ -31,8 +39,8 @@ img{
     flex-direction: column;
 }
 .container{
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
 }
 .player-container{
     display: flex;
@@ -46,7 +54,9 @@ img{
 .sidebar{
     flex-shrink: 0;
     width: var(--sidebar-width);
+    background-color: var(--black);
 }
+
 /* LAYOUT-PLAYER */
 /* song-details */
 .player-container .song-details{
@@ -71,6 +81,7 @@ img{
 .song-info{
     flex-grow: 1;
 }
+
 /* layout-playback-controls */
 .player-container .playback {
     width: 45%;
@@ -101,6 +112,7 @@ img{
     height: 4px;
     flex-grow: 1;
 }
+
 /* volume-controls */
 .player-container .volume-controls{
     display: flex;
@@ -108,7 +120,10 @@ img{
     gap: 12px;
     padding: 0 10px;
 }
-.
+
+/* SIDEBAR-LAYOUT */
+
+
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
 
@@ -119,10 +134,6 @@ img{
     border: 2px solid blue;
 }
 
-.debug .player{
-    border: 2px solid green;
-}
-
 .debug .sidebar{
     border: 2px solid yellow;
 }
@@ -130,6 +141,6 @@ img{
     border: 2px solid yellow;
 }
 
-.debug .song-details, .playback-controls, .volume-controls{
-    border:2px solid black;
+.debug .sidebar >* {
+    border: 2px solid blue;
 }
