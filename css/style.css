@@ -1,8 +1,16 @@
-/* GENERAL STYLES */
+:root {
+	--brand-color: #adff2f;
+	--black: #000000;
+	--dark-gray: #282828;
+	--deep-blue: #141922;
+	--white: #ffffff;
+	--sidebar-width: 230px;
+}
 
+/* GENERAL STYLES */
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding:0;
 }
 ul,ol{
@@ -28,17 +36,22 @@ img{
 }
 .player-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    min-height: 100px;
+    justify-content: space-between;
+    gap: 10px 0px
 }
 .main-content{
     flex-grow: 1;
 }
 .sidebar{
-    /* flex-basis: 0; ??? */
-    width: 250px;
+    flex-shrink: 0;
+    width: 230px;
 }
+
+/* MEDIA QUERIES */
+/* DESKTOP FIRST */
+
+
 /* DEBUG */
 
 .debug .container{
