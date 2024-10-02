@@ -47,7 +47,7 @@ img{
     flex-shrink: 0;
     width: var(--sidebar-width);
 }
-/* LYAOUT-PLAYER */
+/* LAYOUT-PLAYER */
 /* song-details */
 .player-container .song-details{
     display: flex;
@@ -70,6 +70,10 @@ img{
 }
 .song-info{
     flex-grow: 1;
+}
+/* layout-playback-controls */
+.player-container .playback {
+    width: 45%;
 }
 
 /* MEDIA QUERIES */
