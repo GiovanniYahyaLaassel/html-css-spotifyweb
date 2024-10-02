@@ -75,7 +75,40 @@ img{
 .player-container .playback {
     width: 45%;
 }
-
+.playback-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.playback-controls .controls-icon {
+    font-size: 22px;
+}
+.playback-controls .controls-icon.icon-play{
+    font-size: 30px;
+    margin: 0 10px;
+}
+.player-progress{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    padding: 14px 0;
+}
+.slider{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 120px;
+    height: 4px;
+    flex-grow: 1;
+}
+/* volume-controls */
+.player-container .volume-controls{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 10px;
+}
+.
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
 
