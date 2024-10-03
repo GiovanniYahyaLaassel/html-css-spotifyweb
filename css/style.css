@@ -140,6 +140,33 @@ img{
     margin-top: auto;
 }
 
+.sidebar-item .item-icon {
+    width: 22px;
+}
+
+.sidebar-item a {
+    display: flex;
+    padding: 10px var(--sidebar-space);
+    align-items: center;
+    gap: 8px;
+} 
+/* creation of the pseudo element */
+.sidebar-item{
+    position: relative;
+}
+
+.sidebar-item.active::before,
+.sidebar-item:hover::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 0;
+    background-color: var(--brand-color);
+}
+
 
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
@@ -167,6 +194,23 @@ img{
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
+    /* icon-item centering */
+
+    .sidebar-item .item-text{
+        display: none;
+    }
+    .sidebar-item{
+        justify-content: center;
+    }
+
+    
+.sidebar-item.active::before,
+.sidebar-item:hover::before{
+    display: none;
+}
+
+
 }
 
 
