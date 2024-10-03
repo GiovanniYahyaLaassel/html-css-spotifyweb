@@ -5,6 +5,7 @@
 	--deep-blue: #141922;
 	--white: #ffffff;
 	--sidebar-width: 230px;
+    --sidebar-space:20px;
 }
 
 /* GENERAL STYLES */
@@ -124,7 +125,15 @@ img{
 }
 
 /* SIDEBAR-LAYOUT */
+.sidebar .logo{
+    padding: 20px var(--sidebar-space) ;
+}
+.logo-large{
+    display: block;
+    width: 120px;
+}
 .logo-small{
+    width: 100%;
     display: none;
 }
 .sidebar .user-details{
@@ -138,11 +147,25 @@ img{
 /* mobile-mode */
 @media (max-width:575.98px){
     .sidebar{
-        width: 50px;
+        --sidebar-width:50px;
+        --sidebar-space:10px;
     }
 
     .sidebar .all-playlists, .playlist-creation {
         display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .logo-large{
+        display: none;
+    }
+
+    .sidebar .logo{
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
