@@ -166,7 +166,31 @@ img{
     left: 0;
     background-color: var(--brand-color);
 }
+/* ADD-NEW-PLAYLIST */
+.playlist-creation{
+    padding: 14px 0;
+}
 
+.title-new-list, .button-new-list{
+    padding-left: var(--sidebar-space);
+    padding-right: var(--sidebar-space);
+}
+
+.playlist-item a{
+    padding:10px var(--sidebar-space);
+    display: block;
+}
+
+.button-new-list .button-icon{
+    background-color: white;
+    aspect-ratio: 1/1;
+    width: 35px;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
@@ -204,11 +228,11 @@ img{
         justify-content: center;
     }
 
-    
-.sidebar-item.active::before,
-.sidebar-item:hover::before{
-    display: none;
-}
+        
+    .sidebar-item.active::before,
+    .sidebar-item:hover::before{
+        display: none;
+    }
 
 
 }
