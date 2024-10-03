@@ -55,6 +55,8 @@ img{
     flex-shrink: 0;
     width: var(--sidebar-width);
     background-color: var(--black);
+    display: flex;
+    flex-direction: column;
 }
 
 /* LAYOUT-PLAYER */
@@ -122,10 +124,27 @@ img{
 }
 
 /* SIDEBAR-LAYOUT */
+.logo-small{
+    display: none;
+}
+.sidebar .user-details{
+    margin-top: auto;
+}
 
 
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
+
+/* mobile-mode */
+@media (max-width:575.98px){
+    .sidebar{
+        width: 50px;
+    }
+
+    .sidebar .all-playlists, .playlist-creation {
+        display: none;
+    }
+}
 
 
 /* DEBUG */
