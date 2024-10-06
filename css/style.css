@@ -51,6 +51,7 @@ img{
     gap: 10px 0px
 }
 .main-content{
+    position: relative;
     flex-grow: 1;
 }
 .sidebar{
@@ -59,6 +60,23 @@ img{
     background-color: var(--black);
     display: flex;
     flex-direction: column;
+}
+/* MAIN-CONTENT */
+.banner{
+    position: absolute;
+    height: 90px;
+    color:var(--white);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.update{
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    border-radius: 999px;
+    margin-top: 18px;
+    margin-right: 20px;
+
 }
 
 /* LAYOUT-PLAYER */
