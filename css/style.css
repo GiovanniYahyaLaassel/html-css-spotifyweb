@@ -47,6 +47,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--dark-gray);
     gap: 10px 0px
 }
 .main-content{
@@ -143,6 +144,23 @@ img{
 .sidebar-item .item-icon {
     width: 22px;
 }
+.button-new-list{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.button-new-list .button-icon{
+    aspect-ratio: 1/1;
+    width: 32px;
+    font-size: 22px;
+    color: #000000;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .sidebar-item a {
     display: flex;
@@ -150,6 +168,7 @@ img{
     align-items: center;
     gap: 8px;
 } 
+
 /* creation of the pseudo element */
 .sidebar-item{
     position: relative;
@@ -181,16 +200,14 @@ img{
     display: block;
 }
 
-.button-new-list .button-icon{
-    background-color: white;
-    aspect-ratio: 1/1;
-    width: 35px;
-    font-size: 24px;
-    color: black;
+/* USERS ACCOUNT STYLIZATION */
+.user-details .app-doownload, 
+.user-details .users-profile{
     display: flex;
-    justify-content: center;
     align-items: center;
+
 }
+
 
 /* MEDIA QUERIES */
 /* DESKTOP FIRST */
