@@ -38,6 +38,7 @@ img{
     flex-direction: column;
 }
 .container{
+    position: relative;
     display: flex;
     flex-grow: 1;
 }
@@ -79,9 +80,24 @@ img{
 }
 /* layout-content */
 .content{
+    overflow: auto;
+    padding: 10px;
+    position: relative;
     width: 100%;
     height: 100%;    
 }
+.main-content-nav{
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-top: 100px;
+}
+.list-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
 
 /* LAYOUT-PLAYER */
 /* song-details */
