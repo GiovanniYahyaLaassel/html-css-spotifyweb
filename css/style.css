@@ -118,7 +118,8 @@ img{
 /* Section */
 .section-title{
     font-size: 28px;
-    margin-top: 12px;
+    margin-top: 16px;
+    padding: 0 20px;
 }
 
 
@@ -133,6 +134,31 @@ img{
 .section-list > *{
     padding: 0 6px;
     width: calc(100% / 6);
+}
+
+/* layout card */
+
+.card-header{
+    margin-bottom: 14px;
+}
+
+.card-header img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.card-details{
+    font-size: 10px;
+    color: grey;
+    margin-top: 8px;
 }
 
 /* LAYOUT-PLAYER */
